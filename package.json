@@ -1,0 +1,37 @@
+{
+  "name": "7val",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Sevenval Developer Toolbelt",
+  "main": "index.js",
+  "scripts": {
+    "test": "lerna run test",
+    "lerna": "lerna",
+    "changelog": "lerna-changelog",
+    "lint": "standard --fix '**/*.js'",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "commit": "commit",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:7val/7val.git"
+  },
+  "keywords": [
+    "7val",
+    "toolbelt",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.2",
+    "@commitlint/config-conventional": "^6.1.2",
+    "@commitlint/prompt-cli": "^6.1.2",
+    "husky": "^0.14.3",
+    "lerna": "^2.9.0",
+    "lerna-changelog": "^0.7.0",
+    "lint-staged": "^7.0.0",
+    "standard": "^11.0.0"
+  }
+}
